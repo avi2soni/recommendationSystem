@@ -12,13 +12,13 @@ print(rangeCol)
 #filtering based on range greater than 300
 rangeItem = df[df['Range'] > 300]
 print(rangeItem['Range'])
-print(rangeItem[['Brand', 'Model','Range']])
+print(rangeItem[['Brand', 'Model', 'Range']])
 
 
 #filtering based on range greater than 300 and price less than $50,000
 rangeItem = df[(df['Range'] > 300) & (df['Price After Credit'] < 50000)]
-print(rangeItem[['Brand', 'Model','Range', 'Price After Credit']])
+print(rangeItem[['Brand', 'Model', 'Range', 'Price After Credit']])
 
 #filtering based on battery size
 rangeItem = df[df['Battery Size'] == 98.8]
-print(rangeItem[['Brand', 'Model','Battery Size']])
+print(rangeItem[['Brand', 'Model', 'Battery Size']])
